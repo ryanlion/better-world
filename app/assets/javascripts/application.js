@@ -25,3 +25,6 @@
 //= require jquery.validate.min
 //= require parsley-2.0.0.remote
 //= require parsley-2.0.0
+//= require markerclusterer_packed
+//= require underscore
+//= require gmaps/google

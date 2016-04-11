@@ -48,6 +48,7 @@ gem 'dragonfly-s3_data_store'
 gem 'spreadsheet'
 gem 'axlsx'
 gem 'devise'
+gem 'gmaps4rails'
 gem 'devise_invitable'
 group :production do
   gem 'rails_12factor'
