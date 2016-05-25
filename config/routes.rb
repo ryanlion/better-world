@@ -30,9 +30,10 @@ Rails.application.routes.draw do
   #   end
 
   # Example resource route with sub-resources:
-     resources :bicycles do
+     scope "/admin" do
+       resources :bicycles
+       resources :users
      end
-
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments
