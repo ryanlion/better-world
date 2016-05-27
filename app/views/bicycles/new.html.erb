@@ -1,0 +1,23 @@
+<%= form_for :bicycle, :html=> {:id => 'new-bicycle-form'}, url: bicycles_path do |f| %>
+<div class="row clearfix">
+<div class="col-md-12 column">
+  <table id="new-bicycle-table" class="table table-bordered table-hover" data-height="500">
+      <tr>
+        <td>Bicycle Device ID:</td><td><input name="bicycle[device_id]" type="text" class='form-control input-md' /></td>
+        <td>Model:</td><td><input name="bicycle[model]" type="text" class='form-control input-md' /></td>
+      </tr>
+      <tr>
+        <td>Cost:</td><td><input name="bicycle[cost]" type="text" class='form-control input-md' /></td>
+        <td>Remarks:</td><td><input name="bicycle[remarks]" type="text" class='form-control input-md' /></td>
+      </tr>
+      <tr>
+        <td>Longtitude:</td><td><input name="bicycle[longtitude]" type="text" class='form-control input-md' /></td>
+        <td>Latitude:</td><td><input name="bicycle[latitude]" type="text" class='form-control input-md' /></td>
+      </tr>
+  </table>
+</div>
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"/>
+<button id='create_bicycle' class="pull-right btn btn-info">Submit</button>
+</div>
+<% end %>
+

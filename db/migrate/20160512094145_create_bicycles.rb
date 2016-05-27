@@ -4,6 +4,10 @@ class CreateBicycles < ActiveRecord::Migration
       t.string :uuid
       t.string :longtitude
       t.string :latitude
+      t.string :device_id
+      t.string :model
+      t.string :cost
+      t.string :remarks
       t.string :status
 
       t.timestamps
